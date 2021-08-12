@@ -5,7 +5,7 @@ const workercode = () => {
   onmessage = (e) => {
     // Destructure the variables sent from main thread
     const [width, height, pixels, id] = e.data;
-    let counter = 1; // Counter for keeping number of pixels record
+    // let counter = 1; // Counter for keeping number of pixels record
     /**
      *  Iterate for R, G and B and get unique [r, g, b] set combination
      */
@@ -22,14 +22,14 @@ const workercode = () => {
           // if (x > width / 2) {
           //   pixels[off + 3] = 255 * (1 - ((x - width / 10) / (width / 10)));
           // }
-          console.log(
-            `R, G, B values for each pixel ${counter}`,
-            r,
-            g,
-            b,
-            "\n",
-          );
-          counter += 1;
+          // console.log(
+          //   `R, G, B values for each pixel ${counter}`,
+          //   r,
+          //   g,
+          //   b,
+          //   "\n",
+          // );
+          // counter += 1;
         }
       }
     }
