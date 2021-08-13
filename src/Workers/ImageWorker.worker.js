@@ -1,14 +1,7 @@
 const workercode = () => {
-  /**
-   * @description Trigger when user send postmessage to worker
-   */
   onmessage = (e) => {
-    // Destructure the variables sent from main thread
     const [width, height, pixels, id] = e.data;
-    let counter = 1; // Counter for keeping number of pixels record
-    /**
-     *  Iterate for R, G and B and get unique [r, g, b] set combination
-     */
+    let counter = 1;
     for (let r = 8; r <= 256; r += 8) {
       for (let g = 8; g <= 256; g += 8) {
         for (let b = 8; b <= 256; b += 8) {
@@ -33,7 +26,6 @@ const workercode = () => {
         }
       }
     }
-    // Send updated pixels values back to main thread
     postMessage([pixels]);
   };
 };
