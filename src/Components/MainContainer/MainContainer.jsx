@@ -12,7 +12,7 @@ export default function MainContainer() {
       <div className="row">
         <div className="column">
           <h2>Generated Image</h2>
-          <p>pixes</p>
+          (256 x 128)
         </div>
         <div className="column">
           <div className="canvas-wrap">
