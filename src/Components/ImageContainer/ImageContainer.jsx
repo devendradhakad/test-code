@@ -62,7 +62,7 @@ export default function ImageContainer() {
   return (
     <>
       {isLoading ? "generating image using worker thread..." : ""}
-      <canvas ref={canvasRef} height="128" width="256" />
+      <canvas ref={canvasRef} data-testid="canvas-test-id" height="128" width="256" />
     </>
   );
 }

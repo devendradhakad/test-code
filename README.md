@@ -93,7 +93,7 @@ Application requires [Node.js](https://nodejs.org/) v10+ to run.
 Install the dependencies and devDependencies and start the server.
 
 ```sh
-cd code-test
+cd code-test-new
 npm i
 npm run start
 ```
@@ -122,6 +122,10 @@ Run test cases
 npm run test
 ```
 
+Run test cases along with coverage
+```
+npm run test --coverage --watchAll
+```
 Build the app
 ```sh
 npm run build

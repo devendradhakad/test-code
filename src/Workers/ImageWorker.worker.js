@@ -19,9 +19,9 @@ const workercode = () => {
           pixels[off + 1] = g;
           pixels[off + 2] = b;
           pixels[off + 3] = 255;
-          // if (x > width / 2) {
-          //   pixels[off + 3] = 255 * (1 - ((x - width / 10) / (width / 10)));
-          // }
+          if (x > width / 2) {
+            pixels[off + 3] = 255 * (1 - ((x / 10)));
+          }
           console.log(
             `R, G, B values for each pixel ${counter}`,
             r,
